@@ -1,0 +1,49 @@
+{
+  "name": "ulog",
+  "version": "0.1.0",
+  "description": "A web practice project.",
+  "main": "rollup.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.3"
+  },
+  "scripts": {
+    "build": "rollup -c && cp ./out/* ./htdocs/js",
+ "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://tang0425@github.com/tang0425/ulog.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "tang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tang0425/ulog/issues"
+  },
+  "homepage": "https://github.com/tang0425/ulog#readme"
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          },
+          "modules": false
+        }
+      ]
+    ],
+    "plugins": [
+      "external-helpers"
+    ]
+  }
+}
